@@ -24,7 +24,7 @@ function ContactMe() {
 
 
   return (
-    <section id='contact' className='flex flex-col items-center w-[100%] h-screen bg-white bg-opacity-40'>
+    <section id='contact' className='flex flex-col items-center w-[100%] h-screen bg-white bg-opacity-40 p-12'>
         <div className='flex flex-col items-center justify-end w-full h-[9rem] text-white text-[2rem]'>
             Contact Me
         </div>
@@ -53,7 +53,7 @@ function ContactMe() {
                 </div>
             </div>
             <div className='flex w-[50%] items-center'>
-                <form ref={form} onSubmit={handleSubmit} className='w-[70%]'>
+                <form ref={form} onSubmit={handleSubmit} className='w-[60%] mt-7'>
                     <div className='flex flex-col justify-center gap-2 '>
                         <div className='flex flex-col p-2 bg-gray-300 rounded-lg'>
                             <label htmlFor="">Name</label>
@@ -69,7 +69,7 @@ function ContactMe() {
                         </div>
                         <div className='flex flex-col p-2 bg-gray-300 rounded-lg'>
                             <label htmlFor="">Message</label>
-                            <textarea name="message" cols="30" rows="10"></textarea>
+                            <textarea name="message" cols="20" rows="10" ></textarea>
                         </div>
                         <div className='flex flex-col items-center justify-center h-[3rem]'>
                             <button type='submit' className='flex items-center justify-center w-[10rem] h-[3rem] bg-blue-950 rounded-lg hover:bg-orange-700 gap-2'>Send Message <FaTelegramPlane size={25}/></button>
